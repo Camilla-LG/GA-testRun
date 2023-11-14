@@ -12,6 +12,10 @@
             Console.WriteLine();
             Variables variablesInstance = new Variables();
             variablesInstance.RunVariablesCode();
+
+            Console.WriteLine();
+            int sumResult = MathSolutions.SumOfNumbers();
+            Console.WriteLine($"Summen av tallene er {sumResult}.");
         }
     }
 }
