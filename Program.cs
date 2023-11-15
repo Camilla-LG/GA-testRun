@@ -13,15 +13,16 @@
             Variables variablesInstance = new Variables();
             variablesInstance.RunVariablesCode();
 
-            Console.WriteLine("Hei! Hva heter du?");
-            var Username = Console.ReadLine();
-            Random rand = new Random();
-            var hobbyResult = rand.Next(hobbies);
-            Console.WriteLine($"{Username} er visst blitt {hobbyResult}");
 
             Console.WriteLine();
             decimal sumResult = MathSolutions.SumOfNumbers();
             Console.WriteLine($"Summen av tallene er {sumResult}.");
+
+            Console.WriteLine();
+            Console.WriteLine("Hei! Hva var det du het igjen?");
+            var Username = Console.ReadLine();
+            string hobbyResult = RandomHelper.HowToUseRandom();
+            Console.WriteLine($"{Username} er visst blitt {hobbyResult}");
         }
     }
 }

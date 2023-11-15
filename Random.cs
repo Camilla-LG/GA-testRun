@@ -1,15 +1,22 @@
 ﻿
 
+using System.ComponentModel.DataAnnotations;
+
 namespace testRun
 {
-    internal class Random
+    internal class RandomHelper
     {  
-        public string[] hobbies = { "tennisspiller", "dartspiller", "footballspiller", "rallysjåfør", "artist" };
         
-        public string HowToUseRandom(string[] hobbies)
+        public static string HowToUseRandom()
         {
+            string[] hobbies = { "tennisspiller", "dartspiller", "footballspiller", "rallysjåfør", "artist" };
 
-            return hobbyResult;
+            Random rand = new Random();
+            int index = rand.Next(0, hobbies.Length);
+            int randomIndex = Convert.ToInt32(index);
+            string randomHobby = hobbies[randomIndex];
+            return randomHobby;
         }
+
     }
 }
