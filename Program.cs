@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Hei! Hva heter du?");
             var nameInput = Console.ReadLine();
@@ -13,8 +13,14 @@
             Variables variablesInstance = new Variables();
             variablesInstance.RunVariablesCode();
 
+            Console.WriteLine("Hei! Hva heter du?");
+            var Username = Console.ReadLine();
+            Random rand = new Random();
+            var hobbyResult = rand.Next(hobbies);
+            Console.WriteLine($"{Username} er visst blitt {hobbyResult}");
+
             Console.WriteLine();
-            int sumResult = MathSolutions.SumOfNumbers();
+            decimal sumResult = MathSolutions.SumOfNumbers();
             Console.WriteLine($"Summen av tallene er {sumResult}.");
         }
     }

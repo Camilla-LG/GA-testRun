@@ -9,14 +9,14 @@ namespace testRun
     internal class MathSolutions
     {
 
-        public static int SumOfNumbers()
+        public static decimal SumOfNumbers()
         {
             Console.WriteLine("Skriv inn det første tallet.");
             int number1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Skriv inn det andre tallet.");
-            int number2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Skriv inn det andre tallet med desimaler.");
+            decimal number2 = Convert.ToDecimal(Console.ReadLine());
 
-            int sum = number1 + number2;
+            decimal sum = number1 + number2;
             return sum;
         }
 
